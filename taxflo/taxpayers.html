@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxpayers</title>
+    <link rel="stylesheet" href="taxpayers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- TAXPAYERS -->
+    <div class="taxpayers-header">
+        <h2>Taxpayers</h2>
+        <i class="fa-solid fa-filter"></i>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-taxpayers">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search taxpayers...">
+    </div>
+
+    <!-- TABS -->
+    <div class="members-header">
+        <p class="tab active-tab">All (1,240)</p>
+        <p class="tab">Active (980)</p>
+        <p class="tab">Inactive (260)</p>
+    </div>
+
+    <!-- JOHN DOE -->
+    <div class="profile-card" onclick="window.location.href='taxpayer-details.html'">
+        <img src="boll.jpeg">
+        <div class="profile-info">
+            <h4>John Doe</h4>
+            <p>ITR1234567890</p>
+            <div class="profile-contact">
+                <i class="fa-regular fa-envelope"></i>
+                <p>john.doe@email.com</p>
+            </div>
+            <div class="profile-contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>071 234 5678</p>
+            </div>
+        </div>
+        <span class="badge-active">Active</span>
+    </div>
+
+    <!-- PTY LTD -->
+    <div class="profile-card" onclick="window.location.href='taxpayer-details.html'">
+        <img src="profil1.jpeg">
+        <div class="profile-info">
+            <h4>Pty (Ltd)</h4>
+            <p>ITR9876543210</p>
+            <div class="profile-contact">
+                <i class="fa-regular fa-envelope"></i>
+                <p>info@ptyltd.co.za</p>
+            </div>
+            <div class="profile-contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>011 234 5678</p>
+            </div>
+        </div>
+        <span class="badge-active">Active</span>
+    </div>
+
+    <!-- JANE SMITH -->
+    <div class="profile-card" onclick="window.location.href='taxpayer-details.html'">
+        <img src="profil2.jpeg">
+        <div class="profile-info">
+            <h4>Jane Smith</h4>
+            <p>ITR4567891230</p>
+            <div class="profile-contact">
+                <i class="fa-regular fa-envelope"></i>
+                <p>jane.smith@email.com</p>
+            </div>
+            <div class="profile-contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>083 123 4567</p>
+            </div>
+        </div>
+        <span class="badge-inactive">Inactive</span>
+    </div>
+
+    <!-- ABC HOLDINGS -->
+    <div class="profile-card" onclick="window.location.href='taxpayer-details.html'">
+        <img src="profil3.jpeg">
+        <div class="profile-info">
+            <h4>ABC Holdings</h4>
+            <p>ITR7891234560</p>
+            <div class="profile-contact">
+                <i class="fa-regular fa-envelope"></i>
+                <p>contact@abcholding.co.za</p>
+            </div>
+            <div class="profile-contact">
+                <i class="fa-solid fa-phone"></i>
+                <p>021 234 5678</p>
+            </div>
+        </div>
+        <span class="badge-active">Active</span>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+        <a href="taxpayers.html" class="nav-item active">
+            <i class="fa-solid fa-users"></i>
+            <span>Taxpayers</span>
+        </a>
+        <a href="returns.html" class="nav-item">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Returns</span>
+        </a>
+        <a href="profile.html" class="nav-item">
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+        </a>
+        <a href="more.html" class="nav-item">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span>More</span>
+        </a>
+    </nav>
+
+    <script src="taxpayers.js"></script>
+</body>
+</html>

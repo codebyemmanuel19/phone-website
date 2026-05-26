@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="header-inner">
+                <i class="fa-solid fa-bars"></i>
+                <div class="header-user">
+                    <img src="boll.jpeg">
+                    <div class="header-text">
+                        <p>Good Morning,</p>
+                        <h4>Admin</h4>
+                    </div>
+                </div>
+                <i class="fa-regular fa-bell"></i>
+            </div>
+        </header>
+
+        <!-- OVERVIEW -->
+        <section class="overview">
+            <div class="overview-header">
+                <h3>Overview</h3>
+                <p>This Month ▾</p>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <p>Total Taxpayers</p>
+                    <h2>1,240</h2>
+                    <span class="up"><i class="fa-solid fa-arrow-up"></i> 12.5%</span>
+                </div>
+                <div class="overview-card">
+                    <p>Total Returns</p>
+                    <h2>2,458</h2>
+                    <span class="up"><i class="fa-solid fa-arrow-up"></i> 8.7%</span>
+                </div>
+                <div class="overview-card">
+                    <p>Total Revenue</p>
+                    <h2>R 45,2M</h2>
+                    <span class="up"><i class="fa-solid fa-arrow-up"></i> 15.3%</span>
+                </div>
+                <div class="overview-card">
+                    <p>Pending Returns</p>
+                    <h2>320</h2>
+                    <span class="down"><i class="fa-solid fa-arrow-down"></i> 4.2%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- REVENUE TREND -->
+        <section class="revenue-section">
+            <div class="revenue-header">
+                <h3>Revenue Trend</h3>
+                <p>This Year ▾</p>
+            </div>
+            <canvas id="revenueChart"></canvas>
+        </section>
+
+        <!-- RECENT ACTIVITIES -->
+        <section class="recent-section">
+            <div class="activities-header">
+                <h3>Recent Activities</h3>
+                <a href="#">View All</a>
+            </div>
+            <div class="activity-item">
+                <div class="activity-icon">
+                    <i class="fa-solid fa-file-alt"></i>
+                </div>
+                <div class="activity-text">
+                    <h4>New Return Submitted</h4>
+                    <p>ITR12 - John Doe</p>
+                </div>
+                <span class="activity-time">2h ago</span>
+            </div>
+        </section>
+
+        <!-- BOTTOM NAV -->
+        <nav class="bottom-nav">
+            <a href="home.html" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a href="taxpayers.html" class="nav-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Taxpayers</span>
+            </a>
+            <a href="returns.html" class="nav-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Returns</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+            <a href="more.html" class="nav-item">
+                <i class="fa-solid fa-ellipsis"></i>
+                <span>More</span>
+            </a>
+        </nav>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>

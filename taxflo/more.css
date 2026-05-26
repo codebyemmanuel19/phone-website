@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #03163A 0%,
+        #020F2C 55%,
+        #010A1F 100%
+    );
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-height: 480px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ------ MOVE ------ */
+
+.move{
+    padding: 20px;
+}
+
+/* ----- MOVE LOGOUT ----- */
+.move-logout{
+    padding: 20px;
+}
+
+.notif-badge {
+    background: #ef4444;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.logout{
+    color: #FF4D4D;
+}
+
+.notifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #1E2F4A;
+    color: #D8DCE6;
+}
+
+.notifications-left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+
+
+/* ----- BOTTOM NAV ----- */
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0A1220;
+    border-top: 1px solid #1E2F4A;
+    padding: 12px 0;
+    position: sticky;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #6B7EA0;
+    font-size: 11px;
+}
+
+.nav-item i {
+    font-size: 18px;
+}
+
+.nav-item.active {
+    color: #1a6bff;
+}

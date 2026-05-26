@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #03163A 0%,
+    #020F2C 55%,
+    #010A1F 100%
+  );
+}
+
+/* ----- CARD ----- */
+.card {
+  width: 340px;
+  background: #0B1528;
+  border: 1px solid #1E2F4A;
+  border-radius: 20px;
+  padding: 36px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ----- LOGO SECTION ----- */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-sars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo p {
+  font-size: 13px;
+  color: #6B7EA0;
+}
+
+/* ----- LOGIN FORM ----- */
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ----- INPUTS ----- */
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  background: #0A1220;
+  border: 1px solid #1E2F4A;
+  border-radius: 10px;
+  color: #D8DCE6;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: #6B7EA0;
+}
+
+.input-group input:focus {
+  border-color: #1a6bff;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6B7EA0;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6B7EA0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ----- REMEMBER ROW ----- */
+.remember-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #D8DCE6;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.remember-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0B5DFF;
+  cursor: pointer;
+}
+
+.remember-row a {
+  font-size: 13px;
+  color: #1a6bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ----- SIGN IN BUTTON ----- */
+.btn-signin {
+  width: 100%;
+  padding: 13px;
+  background: #1a6bff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-signin:hover {
+  background: #2878ff;
+}
+
+.demo-hint {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-size: 600;
+}
+
+/* ----- OR DIVIDER ----- */
+.or-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6B7EA0;
+  font-size: 13px;
+}
+
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #1E2F4A;
+}
+
+/* ----- BIOMETRIC BUTTON ----- */
+.btn-biometric {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #1E2F4A;
+  border-radius: 10px;
+  color: #D8DCE6;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-biometric:hover {
+  border-color: #1a6bff;
+  background: rgba(26, 107, 255, 0.06);
+}
+
+/* ----- FOOTER TEXT ----- */
+.footer-text {
+  text-align: center;
+  font-size: 13px;
+  color: #6B7EA0;
+}
+
+.footer-text a {
+  color: #1a6bff;
+  text-decoration: none;
+  font-weight: 500;
+}

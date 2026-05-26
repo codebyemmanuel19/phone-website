@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    min-height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #03163A 0%,
+        #020F2C 55%,
+        #010A1F 100%
+    );
+}
+
+/* ------ RETURN-DETAILS-ICON -----*/
+.return-details{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/*----- RETURN-DETAILS-ICON-SUBMITTED -----*/
+.return-details-submitted{
+    padding: 20px 16px;
+}
+.submit{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.submit-date{
+    font-size: 13px;
+    color: #6B7EA0;
+}
+
+.return-details a{
+    color: white;
+    text-decoration: none;
+}
+.submit h2{
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+
+/* ----- PROGRESS TRACKER ----- */
+.progress-tracker {
+    display: flex;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+.progress-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.progress-step p {
+    font-size: 11px;
+    color: #6B7EA0;
+    white-space: nowrap;
+}
+
+.step-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #1E2F4A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #6B7EA0;
+}
+
+.step-circle.active {
+    background: #22c55e;
+    border-color: #22c55e;
+    color: white;
+}
+
+.progress-line {
+    flex: 1;
+    height: 2px;
+    background: #1E2F4A;
+    margin-bottom: 18px;
+}
+
+.progress-line.active {
+    background: #22c55e;
+}
+
+
+/* ----- RETURN SUMMARY ----- */
+.return-sommary {
+    margin: 0 16px 16px;
+    background: #0A1220;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.return-sommary h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.sommary-datails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.sommary-datails h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6B7EA0;
+}
+
+.sommary-datails p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.amount-payable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1E2F4A;
+    padding-top: 14px;
+    margin-top: 4px;
+}
+
+.amount-payable h2 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.amount-payable p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a6bff;
+}
+
+/* ----- RETURN BUTTONS ----- */
+.return-button {
+    display: flex;
+    gap: 12px;
+    padding: 0 16px 20px;
+}
+
+.download {
+    flex: 1;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid #1a6bff;
+    border-radius: 10px;
+    color: #1a6bff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view {
+    flex: 1;
+    padding: 14px;
+    background: #1a6bff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}

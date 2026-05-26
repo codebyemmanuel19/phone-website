@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ----- BLOG ----- */
+.back-btn {
+    padding: 15px 20px;
+}
+
+.back-btn a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.back-btn a:hover {
+    color: blue;
+}
+
+
+/* ----- NAVBAR ----- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.nav-logo p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+}
+
+.navbar .fa-bars{
+    font-size: 22px;
+    color: #111;
+    cursor: pointer;
+}
+
+/* ----- POST ARTICLE ----- */
+.post{
+    padding: 25px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+.post h5{
+    color: blue;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 8;
+}
+.post h1{
+    font-size: 28px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.post .date{
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+.post img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.post p{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+/* ---------- LAPTOP VERSION ---------- */
+@media (min-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 20px 60px;
+    }
+
+    /* BLOG SECTION */
+    .blog-section {
+        padding: 40px 60px;
+    }
+
+    .blog-stories h1 {
+        font-size: 60px;
+    }
+
+    /* FILTERS */
+    .filters {
+        padding: 10px 60px;
+        gap: 15px;
+    }
+
+    /* CARDS - 2 COLUMNS */
+    .futures-section {
+        padding: 30px 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* BIGGER IMAGES */
+    .future-details img {
+        width: 160px;
+        height: 140px;
+    }
+
+    /* POST ARTICLE */
+    .post {
+        max-width: 800px;
+        padding: 40px 60px;
+    }
+
+    .post h1 {
+        font-size: 38px;
+    }
+
+    .post img {
+        height: 350px;
+    }
+
+    .post p {
+        font-size: 16px;
+    }
+
+    /* BACK BUTTON */
+    .back-btn {
+        padding: 20px 60px;
+    }
+}
